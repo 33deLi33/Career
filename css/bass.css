@@ -1,14 +1,17 @@
 /* 媒体查询定义rem  */
+
 @media screen and (min-width: 320px) {
     html {
         font-size: 31.33px;
     }
 }
+
 @media screen and (max-width: 320px) {
     html {
         font-size: 31.33px;
     }
 }
+
 @media screen and (min-width: 480px) {
     html {
         font-size: 32px;
@@ -50,12 +53,12 @@
         font-size: 80px;
     }
 }
+
 @media screen and (min-width: 1300px) {
     html {
         font-size: 86.7px;
     }
 }
-
 
 /* 登陆注销 */    @media screen and (max-width: 768px) {
   .head_login .login_bu1 {
@@ -123,4 +126,3 @@ text-align: center;
 font-size: 0.23rem;
 border-radius: 0.1rem;
 display: none;
-}

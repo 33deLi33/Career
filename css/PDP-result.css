@@ -15,11 +15,10 @@
     background-repeat: no-repeat;
 }
 
-header {
-    display: flex !important;
+.head {
+    display: flex;
     justify-content: space-between;
-    padding: 0.2rem 0.6rem 0.2rem 0.4rem !important;
-
+    padding: 0.2rem 0.6rem 0.2rem 0.4rem;
 }
 
 .logo {
@@ -61,11 +60,6 @@ header {
     padding: 2.5rem 1.5rem;
 }
 
-.img {
-    width: 2.55rem;
-    height: 2.6rem;
-}
-
 .img img {
     width: 100%;
     height: 100%;
@@ -74,8 +68,9 @@ header {
 .slide {
     opacity: 0.9;
     background: #ffffff;
-    border: 0.05px solid #f2f5f9;
-    border-radius: 0.07px;
+    border: 2.05px solid #f2f5f9;
+    border-radius: 2.07px;
+    box-shadow: 0px 0px 10px #e2dfdf;
 }
 
 .carousel-control {
@@ -83,23 +78,24 @@ header {
 }
 
 .item {
-    padding: 0.9rem 0.3rem 0.7rem 8%;
+    padding: 0.9rem 1.4rem 1.5rem 8%;
     display: flex;
     justify-content: space-between;
+}
+
+.item3 p {
+    /* width: 16.6rem; */
+    font-size: 0.25rem;
+    font-family: Microsoft YaHei Regular, Microsoft YaHei Regular-Regular;
+    font-weight: bold;
+    text-align: left;
+    color: #797a7b;
+    line-height: 0.5rem;
 }
 
 .inner {
     display: flex;
     justify-content: space-between;
-}
-
-.content p {
-    font-size: 0.277rem;
-    font-weight: bold;
-    text-align: left;
-    color: #797a7b;
-    line-height: 0.577rem;
-    word-wrap: break-word;
 }
 
 .carousel-indicators li {
@@ -128,7 +124,7 @@ header {
 }
 
 .test-main {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -183,52 +179,131 @@ header {
 }
 
 .footer-bj {
-  background: url(../images/pdp-bottom.png);
-  background-size: 100%;
-  background-position: bottom;
-  background-repeat: no-repeat;
-}
-
-.footer-bj p {
-  font-size: 0.24rem;
-  font-weight: bold;
-  font-style: italic;
-  text-align: center;
-  color: #9c9999;
-  line-height: 0.58rem;
-}
-
-body{
     background: url(../images/pdp-bottom.png);
     background-size: 100%;
     background-position: bottom;
     background-repeat: no-repeat;
 }
 
-.footer-bj p {
+.last-p {
     font-size: 0.24rem;
     font-weight: bold;
     font-style: italic;
     text-align: center;
     color: #9c9999;
     line-height: 0.58rem;
+    margin: 0.4rem 0 0.3rem 0;
 }
 
+
+/* PART 1 */
+
+h2 {
+    font-size: 0.37rem;
+    color: #797a7b !important;
+}
+
+.active1 {
+    padding: 1rem;
+}
+
+.part1 {
+    padding: 1.2rem 1rem 0rem 1.5rem !important;
+}
+
+.cont1 {
+    margin: 0 !important;
+}
+
+.part1 p {
+    font-size: 0.37rem;
+    font-family: Microsoft YaHei Regular, Microsoft YaHei Regular-Regular;
+    font-weight: bold;
+    text-align: left;
+    color: #797a7b;
+    line-height: 0.84rem;
+}
+
+
+/* PART 2 */
+
+.active2 {
+    padding: 1rem;
+}
+
+.part2 {
+    padding: 1rem 1.5rem !important;
+}
+
+.part2 p {
+    font-size: 0.37rem;
+    font-family: Microsoft YaHei Regular, Microsoft YaHei Regular-Regular;
+    font-weight: bold;
+    text-align: left;
+    color: #797a7b;
+    line-height: 0.84rem;
+}
+
+
+/* PART 3 */
+
+.part3 {
+    padding: 1rem 1.5rem !important;
+}
+
+.content {
+    padding: 0 0rem !important;
+}
+
+
+/* 分割线 */
+
+.box {
+    text-align: center;
+}
+
+.box span {
+    font-size: 0.2rem;
+    margin: 1rem;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 320px) {
+    .img {
+        display: none;
+    }
+    .line {
+        display: inline-block;
+        width: 1rem;
+        line-height: 0.05rem;
+    }
+}
 
 @media screen and (min-width: 320px) {
     .img {
         line-height: 4.5rem;
         margin-right: 0.5rem;
+        line-height: 3.5rem;
+        width: 2.55rem;
+        height: 1.3rem;
     }
-
-    .img {
-        line-height: 5.5rem;
+    .line {
+        display: inline-block;
+        width: 2rem;
+        line-height: 0.05rem;
     }
 }
 
 @media screen and (min-width: 480px) {
     .img {
         line-height: 3.5rem;
+        width: 2.55rem;
+        height: 2.6rem;
+    }
+    .line {
+        display: inline-block;
+        width: 2rem;
+        line-height: 0.05rem;
     }
 }
 
@@ -238,9 +313,13 @@ body{
     .carousel-indicators li {
         margin: 0 0.63rem;
     }
-
     .carousel-indicators .active {
         margin: 0 0.63rem;
+    }
+    .line {
+        display: inline-block;
+        width: 2rem;
+        line-height: 0.05rem;
     }
 }
 
@@ -248,32 +327,64 @@ body{
     .carousel-indicators li {
         margin: 0 0.3rem !important;
     }
-
     .carousel-indicators .active {
         margin: 0 0.3rem !important;
+    }
+    .line {
+        display: inline-block;
+        width: 2rem;
+        line-height: 0.05rem;
     }
 }
 
 @media screen and (min-width: 750px) {
     .img {
         line-height: 3.5rem;
+        width: 2.55rem;
+        height: 2.6rem;
+    }
+    .line {
+        display: inline-block;
+        width: 4rem;
+        line-height: 0.05rem;
     }
 }
 
 @media screen and (min-width: 768px) {
     .img {
         line-height: 3.5rem;
+        width: 2.55rem;
+        height: 2.6rem;
+    }
+    .line {
+        display: inline-block;
+        width: 4rem;
+        line-height: 0.05rem;
     }
 }
 
 @media screen and (min-width: 992px) {
     .img {
         line-height: 3.7rem;
+        width: 2.55rem;
+        height: 2.6rem;
+    }
+    .line {
+        display: inline-block;
+        width: 4rem;
+        line-height: 0.05rem;
     }
 }
 
 @media screen and (min-width: 1200px) {
     .img {
-        line-height: 2rem;
+        line-height: 3.8rem;
+        width: 2.55rem;
+        height: 2.6rem;
+    }
+    .line {
+        display: inline-block;
+        width: 4rem;
+        line-height: 0.05rem;
     }
 }
